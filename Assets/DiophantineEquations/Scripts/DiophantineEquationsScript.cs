@@ -240,7 +240,7 @@ public class DiophantineEquationsScript : MonoBehaviour
         if (!sign)
             return Math.Abs(num) == 1 ? "" : Math.Abs(num).ToString();
         else
-            return Math.Abs(num) == 1 ? "" : num.ToString();
+            return Math.Abs(num) == 1 ? (num == -1 ? "-" : "") : num.ToString();
     }
     #endregion
 
