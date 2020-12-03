@@ -297,7 +297,7 @@ public class DiophantineEquationsScript : MonoBehaviour
         // Solution generation
         if (solutionExists)
         {
-            Debug.LogFormat("[Diophantine Equations #{0}]: {1} divides {2} so solution exists", moduleId, l, N);
+            Debug.LogFormat("[Diophantine Equations #{0}]: {1} divides {2} so solutions exist", moduleId, l, N);
 
             for (int i = 0; i < answer.Length; i++)
             {
@@ -335,7 +335,7 @@ public class DiophantineEquationsScript : MonoBehaviour
             }
         }
         else
-            Debug.LogFormat("[Diophantine Equations #{0}]: {1} doen't divide {2} so solution doesn't exist", moduleId, l, N);
+            Debug.LogFormat("[Diophantine Equations #{0}]: {1} doen't divide {2} so solutions don't exist", moduleId, l, N);
     }
 
     /// <summary>
@@ -536,7 +536,7 @@ public class DiophantineEquationsScript : MonoBehaviour
 
     #region TP Support
 
-    private const string TwitchHelpMessage = @"!{0} submit <int> <int> <int> <int> (Example: !{0} input 5 45 7 -6) To imply no solutions type just !{0} submit";
+    private const string TwitchHelpMessage = @"!{0} submit x y z w (Example: !{0} submit 5 45 7 -6) To submit that there are no solutions type just !{0} submit";
 
     private IEnumerator ProcessTwitchCommand(string command)
     {
